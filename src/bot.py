@@ -34,6 +34,12 @@ from risk import (
     check_drawdown, evaluate_session,
 )
 from sentiment import get_sentiment_scores
+from database import (
+    init_db, record_trade, record_equity,
+    record_session, get_today_summary,
+    get_all_time_summary, get_positions_summary,
+)
+from notifier import TelegramNotifier
 
 logging.basicConfig(
     level=getattr(logging, CFG.LOG_LEVEL),
@@ -144,10 +150,13 @@ class BotState:
 
 class TradingBot:
     def __init__(self):
-        self.broker = Broker()
-        equity      = self.broker.get_equity()
-        self.state  = BotState(equity=equity)
+        init_db()
+        self.broker   = Broker()
+        self.notifier = TelegramNotifier()
+        equity        = self.broker.get_equity()
+        self.state    = BotState(equity=equity)
         self._restore_state()
+        self.notifier.start_polling()
         log.info(f"Bot ready — equity=${equity:,.2f}")
 
     def _save_state(self):
@@ -186,32 +195,100 @@ class TradingBot:
         return (not self.state.screener_run_today and
                 n.hour == CFG.PRE_MARKET_HOUR and n.minute >= CFG.PRE_MARKET_MIN)
 
+    # ── Telegram command handler ──────────────────────────────────────────────
+
+    def _process_commands(self):
+        """Drain the Telegram command queue and act on each command."""
+        while not self.notifier.commands.empty():
+            try:
+                cmd = self.notifier.commands.get_nowait()
+            except Exception:
+                break
+
+            log.info(f"Telegram command received: {cmd}")
+
+            if cmd == "/status":
+                today   = get_today_summary()
+                pos_txt = get_positions_summary(self.broker.get_all_positions())
+                self.notifier.send(f"{today}\n\n{pos_txt}")
+
+            elif cmd == "/positions":
+                self.notifier.send(get_positions_summary(self.broker.get_all_positions()))
+
+            elif cmd == "/performance":
+                self.notifier.send(get_all_time_summary())
+
+            elif cmd.startswith("/sell all"):
+                self._manual_sell_all()
+
+            elif cmd.startswith("/sell "):
+                symbol = cmd.split("/sell ", 1)[1].strip().upper()
+                self._manual_sell(symbol)
+
+            elif cmd == "/help":
+                self.notifier.send(
+                    "*Available commands*\n"
+                    "/status — today P&L + open positions\n"
+                    "/positions — open positions\n"
+                    "/performance — all-time stats\n"
+                    "/sell SYMBOL — close one position\n"
+                    "/sell all — close all positions\n"
+                    "/help — this message"
+                )
+            else:
+                self.notifier.send(f"Unknown command: `{cmd}`\nSend /help for options.")
+
+    def _manual_sell(self, symbol: str):
+        positions = self.broker.get_all_positions()
+        if symbol not in positions:
+            self.notifier.send(f"No open position in `{symbol}`")
+            return
+        qty  = positions[symbol]["qty"]
+        bars = get_minute_bars(symbol, 5)
+        price = float(bars["close"].iloc[-1]) if not bars.empty else positions[symbol]["avg_entry"]
+        if self.broker.sell(symbol, qty, reason="MANUAL"):
+            self._record_exit(symbol, qty, price, "SELL")
+            self._clear_state(symbol)
+            self.notifier.send(f"✅ Manual sell executed: `{symbol}` {qty} shares @ ${price:.2f}")
+
+    def _manual_sell_all(self):
+        positions = self.broker.get_all_positions()
+        if not positions:
+            self.notifier.send("No open positions to close")
+            return
+        for symbol, pos in positions.items():
+            qty  = pos["qty"]
+            bars = get_minute_bars(symbol, 5)
+            price = float(bars["close"].iloc[-1]) if not bars.empty else pos["avg_entry"]
+            if self.broker.sell(symbol, qty, reason="MANUAL"):
+                self._record_exit(symbol, qty, price, "SELL")
+                self._clear_state(symbol)
+        self.notifier.send(f"✅ All positions closed manually ({len(positions)} symbols)")
+
+    # ── Morning prep ─────────────────────────────────────────────────────────
+
     def run_morning_prep(self):
-        """Run screener, sentiment fetch, and regime check before market open."""
         log.info("=" * 52)
         log.info("  PRE-MARKET PREP")
         log.info("=" * 52)
 
-        # 1. Stock screener with sector cap
         self.state.watchlist = run_morning_screen()
         self.state.screener_run_today = True
 
-        # 2. Sentiment scoring for today's watchlist
         if self.state.watchlist and CFG.FINNHUB_API_KEY != "YOUR_FINNHUB_KEY":
             self.state.sentiment_scores = get_sentiment_scores(self.state.watchlist)
         else:
             log.info("Sentiment skipped (no Finnhub key) — all scores default to 0.0")
             self.state.sentiment_scores = {s: 0.0 for s in self.state.watchlist}
 
-        # 3. Market regime check
         spy_df = get_spy_bars(n_days=30)
         self.state.regime = get_regime(spy_df)
 
-        # 4. Reset session state
         self.state.session_equity = self.broker.get_equity()
         self.state.trades.clear()
         self.state.halted = False
 
+        self.notifier.notify_market_open(self.state.watchlist, self.state.regime.value)
         log.info(
             f"Ready — watchlist={self.state.watchlist}  "
             f"regime={self.state.regime.value}  "
@@ -225,13 +302,13 @@ class TradingBot:
         if df is None or df.empty:
             return
 
-        sentiment     = self.state.sentiment_scores.get(symbol, 0.0)
-        snap          = indicator_snapshot(df)
-        signal        = get_signal(df, sentiment_score=sentiment)
-        pos_info      = open_positions.get(symbol)
-        qty           = int(pos_info["qty"]) if pos_info else 0
-        current_price = float(df["close"].iloc[-1])
-        atr_val       = snap.get("atr", 0)
+        sentiment        = self.state.sentiment_scores.get(symbol, 0.0)
+        snap, enriched   = indicator_snapshot(df)
+        signal           = get_signal(enriched, sentiment_score=sentiment, _enriched=True)
+        pos_info         = open_positions.get(symbol)
+        qty              = int(pos_info["qty"]) if pos_info else 0
+        current_price    = float(df["close"].iloc[-1])
+        atr_val          = snap.get("atr", 0)
 
         log.debug(
             f"  {symbol:<6}  signal={signal.value:<4}  "
@@ -268,6 +345,10 @@ class TradingBot:
                     self.state.entry_prices[symbol] = current_price
                     self._save_state()
                     self._record_entry(symbol, shares, current_price)
+                    self.notifier.notify_entry(
+                        symbol, shares, current_price, stop,
+                        conviction, self.state.regime.value,
+                    )
                     log.info(
                         f"  ENTRY {symbol}  shares={shares}  "
                         f"stop={stop:.2f}  conviction={conviction:.2f}  "
@@ -277,7 +358,7 @@ class TradingBot:
         # Exit
         elif signal == Signal.SELL and qty > 0:
             if self.broker.sell(symbol, qty, reason="SIGNAL"):
-                self._record_exit(symbol, qty, current_price, "SIGNAL")
+                self._record_exit(symbol, qty, current_price, "SELL")
                 self._clear_state(symbol)
 
     def _clear_state(self, symbol: str):
@@ -291,6 +372,7 @@ class TradingBot:
             "side": "BUY", "qty": qty, "price": price,
             "entry_price": price, "pnl": 0,
         })
+        record_trade(symbol, "BUY", qty, price, price, 0.0)
 
     def _record_exit(self, symbol: str, qty: int, price: float, side: str):
         entry = self.state.entry_prices.get(symbol, price)
@@ -300,6 +382,8 @@ class TradingBot:
             "side": side, "qty": qty, "price": price,
             "entry_price": entry, "pnl": pnl,
         })
+        record_trade(symbol, side, qty, price, entry, pnl)
+        self.notifier.notify_exit(symbol, qty, price, pnl, side)
         log.info(f"  PNL {symbol}  entry={entry:.2f}  exit={price:.2f}  pnl=${pnl:+.2f}")
 
     def run(self):
@@ -328,18 +412,30 @@ class TradingBot:
 
                 if self._is_near_close():
                     log.info("Near market close — closing all positions.")
+                    for sym, pos in self.broker.get_all_positions().items():
+                        bars      = get_minute_bars(sym, 5)
+                        eod_price = float(bars["close"].iloc[-1]) if not bars.empty else pos["avg_entry"]
+                        self._record_exit(sym, pos["qty"], eod_price, "SELL")
+                        self._clear_state(sym)
                     self.broker.close_all_positions()
-                    evaluate_session(self.state.trades)
+                    report     = evaluate_session(self.state.trades)
+                    end_equity = self.broker.get_equity()
+                    record_session(report, self.state.session_equity, end_equity)
+                    self.notifier.notify_session_end(report, end_equity)
                     time.sleep(3600)
                     self.state.screener_run_today = False
                     continue
 
                 current_equity = self.broker.get_equity()
+                record_equity(current_equity, len(self.broker.get_all_positions()))
+
                 if check_drawdown(self.state.session_equity, current_equity):
                     if not self.state.halted:
                         self.state.halted = True
+                        dd_pct = (self.state.session_equity - current_equity) / self.state.session_equity * 100
                         log.warning("Trading HALTED — drawdown limit hit. Evaluating ...")
-                        evaluate_session(self.state.trades)
+                        report = evaluate_session(self.state.trades)
+                        self.notifier.notify_drawdown(dd_pct)
                     time.sleep(CFG.LOOP_SLEEP_SEC)
                     continue
 
@@ -361,6 +457,8 @@ class TradingBot:
                     f"positions={len(open_positions)}"
                 )
 
+                self._process_commands()
+
                 bought_this_scan: set = set()
                 for symbol in self.state.watchlist:
                     self._check_symbol(symbol, open_positions, bought_this_scan)
@@ -370,8 +468,10 @@ class TradingBot:
 
             except KeyboardInterrupt:
                 log.info("Shutting down ...")
+                self.notifier.stop()
                 self.broker.close_all_positions()
-                evaluate_session(self.state.trades)
+                report = evaluate_session(self.state.trades)
+                self.notifier.notify_session_end(report, self.broker.get_equity())
                 break
 
             except Exception as e:
