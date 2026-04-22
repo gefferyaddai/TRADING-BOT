@@ -102,7 +102,8 @@ def get_regime(spy_df: pd.DataFrame) -> Regime:
         return Regime.TRENDING
 
     spy_ind = add_indicators(spy_df)
-    if spy_ind.empty:
+    if spy_ind.empty or "adx" not in spy_ind.columns:
+        log.warning("SPY indicators unavailable — defaulting to TRENDING regime")
         return Regime.TRENDING
 
     spy_adx = float(spy_ind["adx"].iloc[-1])

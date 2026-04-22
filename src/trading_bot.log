@@ -1,0 +1,1558 @@
+2026-04-17 12:56:55  INFO     Broker — PAPER
+2026-04-17 12:56:55  INFO     Bot ready — equity=$100,000.00
+2026-04-17 12:56:55  INFO     ====================================================
+2026-04-17 12:56:55  INFO       TRADING BOT STARTING
+2026-04-17 12:56:55  INFO       Mode    : PAPER
+2026-04-17 12:56:55  INFO       Capital : $10,000.00
+2026-04-17 12:56:55  INFO       Risk    : 2% per trade
+2026-04-17 12:56:55  INFO     ====================================================
+2026-04-17 12:56:55  INFO     ====================================================
+2026-04-17 12:56:55  INFO       PRE-MARKET PREP
+2026-04-17 12:56:55  INFO     ====================================================
+2026-04-17 12:56:55  INFO     Running morning screen over 100 symbols ...
+2026-04-17 12:56:55  INFO     Alpaca API initialised — mode: PAPER
+2026-04-17 12:56:55  ERROR    get_daily_bars(AAPL): subscription does not permit querying recent SIP data
+2026-04-17 12:56:55  ERROR    get_daily_bars(MSFT): subscription does not permit querying recent SIP data
+2026-04-17 12:56:55  ERROR    get_daily_bars(NVDA): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(AMZN): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(META): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(GOOGL): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(GOOG): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(TSLA): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(BRK.B): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(JPM): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(LLY): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(V): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(UNH): subscription does not permit querying recent SIP data
+2026-04-17 12:56:56  ERROR    get_daily_bars(XOM): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(MA): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(AVGO): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(JNJ): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(PG): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(HD): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(MRK): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(COST): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(CVX): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(ABBV): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(WMT): subscription does not permit querying recent SIP data
+2026-04-17 12:56:57  ERROR    get_daily_bars(BAC): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(PEP): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(KO): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(ADBE): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(CRM): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(ACN): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(MCD): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(TMO): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(CSCO): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(ABT): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(AMD): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(NFLX): subscription does not permit querying recent SIP data
+2026-04-17 12:56:58  ERROR    get_daily_bars(LIN): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(DHR): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(TXN): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(CMCSA): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(NKE): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(WFC): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(PM): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(NEE): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(RTX): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(ORCL): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(INTC): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(QCOM): subscription does not permit querying recent SIP data
+2026-04-17 12:56:59  ERROR    get_daily_bars(UPS): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(HON): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(IBM): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(GS): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(MS): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(SPGI): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(CAT): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(AMGN): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(ELV): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(DE): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(AMAT): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(INTU): subscription does not permit querying recent SIP data
+2026-04-17 12:57:00  ERROR    get_daily_bars(ISRG): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(BKNG): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(AXP): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(MDLZ): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(ADI): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(VRTX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(BLK): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(SYK): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(GILD): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(MMC): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(PLD): subscription does not permit querying recent SIP data
+2026-04-17 12:57:01  ERROR    get_daily_bars(REGN): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(MU): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(LRCX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(ZTS): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(NOW): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(TJX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(SBUX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(C): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(BSX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(PGR): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(KLAC): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(SO): subscription does not permit querying recent SIP data
+2026-04-17 12:57:02  ERROR    get_daily_bars(DUK): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(CL): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(MO): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(SLB): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(F): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(GM): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(GE): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(UBER): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(ABNB): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(SNOW): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(PLTR): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(COIN): subscription does not permit querying recent SIP data
+2026-04-17 12:57:03  ERROR    get_daily_bars(SQ): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  ERROR    get_daily_bars(SHOP): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  ERROR    get_daily_bars(ROKU): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  ERROR    get_daily_bars(ZM): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  ERROR    get_daily_bars(RBLX): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  WARNING  Screener returned no results — check credentials / market hours
+2026-04-17 12:57:04  INFO     Sentiment skipped (no Finnhub key) — all scores default to 0.0
+2026-04-17 12:57:04  ERROR    get_daily_bars(SPY): subscription does not permit querying recent SIP data
+2026-04-17 12:57:04  WARNING  SPY data unavailable — defaulting to TRENDING regime
+2026-04-17 12:57:04  INFO     Ready — watchlist=[]  regime=TRENDING  equity=$100,000.00
+2026-04-17 12:58:04  INFO     ====================================================
+2026-04-17 12:58:04  INFO       PRE-MARKET PREP
+2026-04-17 12:58:04  INFO     ====================================================
+2026-04-17 12:58:04  INFO     Running morning screen over 100 symbols ...
+2026-04-17 12:58:04  ERROR    get_daily_bars(AAPL): subscription does not permit querying recent SIP data
+2026-04-17 12:58:04  ERROR    get_daily_bars(MSFT): subscription does not permit querying recent SIP data
+2026-04-17 12:58:04  ERROR    get_daily_bars(NVDA): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(AMZN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(META): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(GOOGL): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(GOOG): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(TSLA): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(BRK.B): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(JPM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(LLY): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(V): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(UNH): subscription does not permit querying recent SIP data
+2026-04-17 12:58:05  ERROR    get_daily_bars(XOM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(MA): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(AVGO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(JNJ): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(PG): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(HD): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(MRK): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(COST): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(CVX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(ABBV): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(WMT): subscription does not permit querying recent SIP data
+2026-04-17 12:58:06  ERROR    get_daily_bars(BAC): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(PEP): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(KO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(ADBE): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(CRM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(ACN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(MCD): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(TMO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(CSCO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(ABT): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(AMD): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(NFLX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(LIN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:07  ERROR    get_daily_bars(DHR): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(TXN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(CMCSA): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(NKE): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(WFC): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(PM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(NEE): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(RTX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(ORCL): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(INTC): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(QCOM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(UPS): subscription does not permit querying recent SIP data
+2026-04-17 12:58:08  ERROR    get_daily_bars(HON): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(IBM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(GS): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(MS): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(SPGI): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(CAT): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(AMGN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(ELV): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(DE): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(AMAT): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(INTU): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(ISRG): subscription does not permit querying recent SIP data
+2026-04-17 12:58:09  ERROR    get_daily_bars(BKNG): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(AXP): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(MDLZ): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(ADI): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(VRTX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(BLK): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(SYK): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(GILD): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(MMC): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(PLD): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(REGN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(MU): subscription does not permit querying recent SIP data
+2026-04-17 12:58:10  ERROR    get_daily_bars(LRCX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(ZTS): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(NOW): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(TJX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(SBUX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(C): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(BSX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(PGR): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(KLAC): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(SO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(DUK): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(CL): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(MO): subscription does not permit querying recent SIP data
+2026-04-17 12:58:11  ERROR    get_daily_bars(SLB): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(F): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(GM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(GE): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(UBER): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(ABNB): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(SNOW): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(PLTR): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(COIN): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(SQ): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(SHOP): subscription does not permit querying recent SIP data
+2026-04-17 12:58:12  ERROR    get_daily_bars(ROKU): subscription does not permit querying recent SIP data
+2026-04-17 12:58:13  ERROR    get_daily_bars(ZM): subscription does not permit querying recent SIP data
+2026-04-17 12:58:13  ERROR    get_daily_bars(RBLX): subscription does not permit querying recent SIP data
+2026-04-17 12:58:13  WARNING  Screener returned no results — check credentials / market hours
+2026-04-17 12:58:13  INFO     Sentiment skipped (no Finnhub key) — all scores default to 0.0
+2026-04-17 12:58:13  ERROR    get_daily_bars(SPY): subscription does not permit querying recent SIP data
+2026-04-17 12:58:13  WARNING  SPY data unavailable — defaulting to TRENDING regime
+2026-04-17 12:58:13  INFO     Ready — watchlist=[]  regime=TRENDING  equity=$100,000.00
+2026-04-17 12:59:13  INFO     ====================================================
+2026-04-17 12:59:13  INFO       PRE-MARKET PREP
+2026-04-17 12:59:13  INFO     ====================================================
+2026-04-17 12:59:13  INFO     Running morning screen over 100 symbols ...
+2026-04-17 12:59:13  ERROR    get_daily_bars(AAPL): subscription does not permit querying recent SIP data
+2026-04-17 12:59:13  ERROR    get_daily_bars(MSFT): subscription does not permit querying recent SIP data
+2026-04-17 12:59:13  ERROR    get_daily_bars(NVDA): subscription does not permit querying recent SIP data
+2026-04-17 12:59:13  ERROR    get_daily_bars(AMZN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:13  ERROR    get_daily_bars(META): subscription does not permit querying recent SIP data
+2026-04-17 12:59:13  ERROR    get_daily_bars(GOOGL): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(GOOG): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(TSLA): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(BRK.B): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(JPM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(LLY): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(V): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(UNH): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(XOM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(MA): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(AVGO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:14  ERROR    get_daily_bars(JNJ): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(PG): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(HD): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(MRK): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(COST): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(CVX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(ABBV): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(WMT): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(BAC): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(PEP): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(KO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(ADBE): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(CRM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:15  ERROR    get_daily_bars(ACN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(MCD): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(TMO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(CSCO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(ABT): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(AMD): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(NFLX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(LIN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(DHR): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(TXN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(CMCSA): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(NKE): subscription does not permit querying recent SIP data
+2026-04-17 12:59:16  ERROR    get_daily_bars(WFC): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(PM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(NEE): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(RTX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(ORCL): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(INTC): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(QCOM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(UPS): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(HON): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(IBM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(GS): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(MS): subscription does not permit querying recent SIP data
+2026-04-17 12:59:17  ERROR    get_daily_bars(SPGI): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(CAT): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(AMGN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(ELV): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(DE): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(AMAT): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(INTU): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(ISRG): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(BKNG): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(AXP): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(MDLZ): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(ADI): subscription does not permit querying recent SIP data
+2026-04-17 12:59:18  ERROR    get_daily_bars(VRTX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(BLK): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(SYK): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(GILD): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(MMC): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(PLD): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(REGN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(MU): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(LRCX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(ZTS): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(NOW): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(TJX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:19  ERROR    get_daily_bars(SBUX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(C): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(BSX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(PGR): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(KLAC): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(SO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(DUK): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(CL): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(MO): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(SLB): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(F): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(GM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:20  ERROR    get_daily_bars(GE): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(UBER): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(ABNB): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(SNOW): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(PLTR): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(COIN): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(SQ): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(SHOP): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(ROKU): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(ZM): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  ERROR    get_daily_bars(RBLX): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  WARNING  Screener returned no results — check credentials / market hours
+2026-04-17 12:59:21  INFO     Sentiment skipped (no Finnhub key) — all scores default to 0.0
+2026-04-17 12:59:21  ERROR    get_daily_bars(SPY): subscription does not permit querying recent SIP data
+2026-04-17 12:59:21  WARNING  SPY data unavailable — defaulting to TRENDING regime
+2026-04-17 12:59:21  INFO     Ready — watchlist=[]  regime=TRENDING  equity=$100,000.00
+2026-04-17 12:59:52  INFO     Shutting down ...
+2026-04-17 12:59:52  INFO     All positions closed.
+2026-04-17 12:59:52  INFO     No trades to evaluate this session.
+2026-04-17 13:00:07  INFO     Broker — PAPER
+2026-04-17 13:00:07  INFO     Bot ready — equity=$100,000.00
+2026-04-17 13:00:07  INFO     ====================================================
+2026-04-17 13:00:07  INFO       TRADING BOT STARTING
+2026-04-17 13:00:07  INFO       Mode    : PAPER
+2026-04-17 13:00:07  INFO       Capital : $10,000.00
+2026-04-17 13:00:07  INFO       Risk    : 2% per trade
+2026-04-17 13:00:07  INFO     ====================================================
+2026-04-17 13:00:08  INFO     ====================================================
+2026-04-17 13:00:08  INFO       PRE-MARKET PREP
+2026-04-17 13:00:08  INFO     ====================================================
+2026-04-17 13:00:08  INFO     Running morning screen over 100 symbols ...
+2026-04-17 13:00:08  INFO     Alpaca API initialised — mode: PAPER
+2026-04-17 13:00:29  INFO     Today's watchlist (10): ['INTC', 'AMD', 'AVGO', 'AMZN', 'C', 'BAC', 'GOOGL', 'SLB', 'F', 'TSLA']
+2026-04-17 13:00:29  INFO       INTC    sector=Tech       mom=+54.6%  price=$67.94  vol=3,229,037
+2026-04-17 13:00:29  INFO       AMD     sector=Tech       mom=+37.8%  price=$277.56  vol=714,716
+2026-04-17 13:00:29  INFO       AVGO    sector=Tech       mom=+29.9%  price=$403.61  vol=681,213
+2026-04-17 13:00:29  INFO       AMZN    sector=ConsDisc   mom=+22.4%  price=$251.28  vol=1,728,490
+2026-04-17 13:00:29  INFO       C       sector=Fin        mom=+20.8%  price=$132.35  vol=540,687
+2026-04-17 13:00:29  INFO       BAC     sector=Fin        mom=+14.5%  price=$53.99  vol=2,226,336
+2026-04-17 13:00:29  INFO       GOOGL   sector=Comm       mom=+13.6%  price=$341.61  vol=783,336
+2026-04-17 13:00:29  INFO       SLB     sector=Energy     mom=+13.4%  price=$52.91  vol=1,084,726
+2026-04-17 13:00:29  INFO       F       sector=Auto       mom=+11.9%  price=$12.89  vol=2,103,691
+2026-04-17 13:00:29  INFO       TSLA    sector=ConsDisc   mom=+9.1%  price=$401.38  vol=913,662
+2026-04-17 13:00:29  INFO     Fetching sentiment for 10 symbols ...
+2026-04-17 13:00:39  WARNING  Finnhub fetch failed for INTC: HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=10)
+2026-04-17 13:00:39  INFO       INTC: no recent news — neutral (0.0)
+2026-04-17 13:00:49  WARNING  Finnhub fetch failed for AMD: HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=10)
+2026-04-17 13:00:49  INFO       AMD: no recent news — neutral (0.0)
+2026-04-17 13:01:00  WARNING  Finnhub fetch failed for AVGO: HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=10)
+2026-04-17 13:01:00  INFO       AVGO: no recent news — neutral (0.0)
+2026-04-17 13:01:10  WARNING  Finnhub fetch failed for AMZN: HTTPSConnectionPool(host='finnhub.io', port=443): Read timed out. (read timeout=10)
+2026-04-17 13:01:10  INFO       AMZN: no recent news — neutral (0.0)
+2026-04-17 13:01:17  WARNING  Claude scoring failed for C: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:17  INFO       C       sentiment=+0.00  (NEUTRAL)  articles=14
+2026-04-17 13:01:23  WARNING  Claude scoring failed for BAC: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:23  INFO       BAC     sentiment=+0.00  (NEUTRAL)  articles=22
+2026-04-17 13:01:27  WARNING  Claude scoring failed for GOOGL: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:27  INFO       GOOGL   sentiment=+0.00  (NEUTRAL)  articles=37
+2026-04-17 13:01:31  WARNING  Claude scoring failed for SLB: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:31  INFO       SLB     sentiment=+0.00  (NEUTRAL)  articles=2
+2026-04-17 13:01:34  WARNING  Claude scoring failed for F: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:34  INFO       F       sentiment=+0.00  (NEUTRAL)  articles=13
+2026-04-17 13:01:36  WARNING  Claude scoring failed for TSLA: 'Config' object has no attribute 'ANTHROPIC_API_KEY'
+2026-04-17 13:01:36  INFO       TSLA    sentiment=+0.00  (NEUTRAL)  articles=41
+2026-04-17 13:01:37  INFO     Sentiment scoring complete.
+2026-04-17 13:01:37  ERROR    Main loop error: 'adx'
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adx'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 351, in run
+    self.run_morning_prep()
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 208, in run_morning_prep
+    self.state.regime = get_regime(spy_df)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/strategy.py", line 108, in get_regime
+    spy_adx = float(spy_ind["adx"].iloc[-1])
+  File "/opt/homebrew/lib/python3.10/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/homebrew/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adx'
+2026-04-17 13:02:08  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:02:08  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:02:38  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:02:38  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:03:09  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:03:09  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:03:39  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:03:39  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:04:09  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:04:09  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:04:40  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:04:40  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:05:10  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:05:10  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:05:40  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:05:41  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:06:11  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:06:11  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:06:41  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:06:41  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val       = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:07:12  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:07:12  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val          = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:07:42  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:07:42  ERROR    Main loop error: 'tuple' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 366, in run
+    self._check_symbol(symbol, open_positions, bought_this_scan)
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 234, in _check_symbol
+    atr_val          = snap.get("atr", 0)
+AttributeError: 'tuple' object has no attribute 'get'
+2026-04-17 13:07:59  INFO     Broker — PAPER
+2026-04-17 13:08:00  INFO     Bot ready — equity=$100,000.00
+2026-04-17 13:08:00  INFO     ====================================================
+2026-04-17 13:08:00  INFO       TRADING BOT STARTING
+2026-04-17 13:08:00  INFO       Mode    : PAPER
+2026-04-17 13:08:00  INFO       Capital : $10,000.00
+2026-04-17 13:08:00  INFO       Risk    : 2% per trade
+2026-04-17 13:08:00  INFO     ====================================================
+2026-04-17 13:08:00  INFO     ====================================================
+2026-04-17 13:08:00  INFO       PRE-MARKET PREP
+2026-04-17 13:08:00  INFO     ====================================================
+2026-04-17 13:08:00  INFO     Running morning screen over 100 symbols ...
+2026-04-17 13:08:00  INFO     Alpaca API initialised — mode: PAPER
+2026-04-17 13:08:17  INFO     Today's watchlist (10): ['INTC', 'AMD', 'AVGO', 'AMZN', 'C', 'BAC', 'GOOGL', 'SLB', 'F', 'TSLA']
+2026-04-17 13:08:17  INFO       INTC    sector=Tech       mom=+54.5%  price=$67.87  vol=3,230,472
+2026-04-17 13:08:17  INFO       AMD     sector=Tech       mom=+37.8%  price=$277.50  vol=714,840
+2026-04-17 13:08:17  INFO       AVGO    sector=Tech       mom=+29.8%  price=$403.33  vol=681,352
+2026-04-17 13:08:17  INFO       AMZN    sector=ConsDisc   mom=+22.2%  price=$250.86  vol=1,729,046
+2026-04-17 13:08:17  INFO       C       sector=Fin        mom=+20.8%  price=$132.28  vol=540,790
+2026-04-17 13:08:17  INFO       BAC     sector=Fin        mom=+14.4%  price=$53.98  vol=2,226,956
+2026-04-17 13:08:17  INFO       GOOGL   sector=Comm       mom=+13.5%  price=$341.46  vol=783,711
+2026-04-17 13:08:17  INFO       SLB     sector=Energy     mom=+13.5%  price=$52.94  vol=1,085,099
+2026-04-17 13:08:17  INFO       F       sector=Auto       mom=+11.8%  price=$12.88  vol=2,104,192
+2026-04-17 13:08:17  INFO       TSLA    sector=ConsDisc   mom=+9.0%  price=$401.23  vol=914,109
+2026-04-17 13:08:17  INFO     Fetching sentiment for 10 symbols ...
+2026-04-17 13:08:20  INFO       INTC    sentiment=+0.00  (NEUTRAL)  articles=59
+2026-04-17 13:08:25  INFO       AMD     sentiment=+0.11  (POSITIVE)  articles=28
+2026-04-17 13:08:30  INFO       AVGO    sentiment=+0.58  (POSITIVE)  articles=20
+2026-04-17 13:08:34  INFO       AMZN    sentiment=+0.50  (POSITIVE)  articles=45
+2026-04-17 13:08:39  INFO       C       sentiment=+0.36  (POSITIVE)  articles=14
+2026-04-17 13:08:43  INFO       BAC     sentiment=+0.00  (NEUTRAL)  articles=22
+2026-04-17 13:08:47  INFO       GOOGL   sentiment=+0.09  (NEUTRAL)  articles=37
+2026-04-17 13:08:49  INFO       SLB     sentiment=-0.26  (NEGATIVE)  articles=2
+2026-04-17 13:08:54  INFO       F       sentiment=-0.33  (NEGATIVE)  articles=13
+2026-04-17 13:08:58  INFO       TSLA    sentiment=+0.36  (POSITIVE)  articles=41
+2026-04-17 13:08:59  INFO     Sentiment scoring complete.
+2026-04-17 13:08:59  WARNING  SPY indicators unavailable — defaulting to TRENDING regime
+2026-04-17 13:08:59  INFO     Ready — watchlist=['INTC', 'AMD', 'AVGO', 'AMZN', 'C', 'BAC', 'GOOGL', 'SLB', 'F', 'TSLA']  regime=TRENDING  equity=$100,000.00
+2026-04-17 13:08:59  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:10:03  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:11:07  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:12:10  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:13:14  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:14:18  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:15:21  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:16:25  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:17:29  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:18:32  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:19:36  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:20:39  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:21:43  INFO     Scanning 10 symbols | equity=$100,000.00 | regime=TRENDING | positions=0
+2026-04-17 13:21:43  INFO       BUY    220 INTC    order=552de762-2edf-40dc-b807-dce6611e9706
+2026-04-17 13:21:43  INFO       ENTRY INTC  shares=220  stop=67.79  conviction=1.00  regime=TRENDING
+2026-04-17 13:21:44  INFO       BUY     53 AMD     order=c6cf1435-1091-42d1-8d22-d664c166b5d3
+2026-04-17 13:21:44  INFO       ENTRY AMD  shares=53  stop=277.56  conviction=1.00  regime=TRENDING
+2026-04-17 13:22:47  INFO     Scanning 10 symbols | equity=$99,989.65 | regime=TRENDING | positions=2
+2026-04-17 13:23:50  INFO     Scanning 10 symbols | equity=$99,997.09 | regime=TRENDING | positions=2
+2026-04-17 13:24:54  INFO     Scanning 10 symbols | equity=$100,011.45 | regime=TRENDING | positions=2
+2026-04-17 13:25:57  INFO     Scanning 10 symbols | equity=$100,013.68 | regime=TRENDING | positions=2
+2026-04-17 13:27:00  INFO     Scanning 10 symbols | equity=$100,013.39 | regime=TRENDING | positions=2
+2026-04-17 13:28:04  INFO     Scanning 10 symbols | equity=$100,012.38 | regime=TRENDING | positions=2
+2026-04-17 13:29:08  INFO     Scanning 10 symbols | equity=$100,006.23 | regime=TRENDING | positions=2
+2026-04-17 13:30:11  INFO     Scanning 10 symbols | equity=$100,040.82 | regime=TRENDING | positions=2
+2026-04-17 13:31:18  INFO     Scanning 10 symbols | equity=$100,025.19 | regime=TRENDING | positions=2
+2026-04-17 13:35:01  ERROR    Main loop error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-17 13:35:32  INFO     Scanning 10 symbols | equity=$100,030.22 | regime=TRENDING | positions=2
+2026-04-17 13:35:32  ERROR    get_minute_bars(INTC): ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2026-04-17 13:35:33  INFO       BUY     42 AMZN    order=2e3e1aee-ea90-4248-ac81-26b3e72e7a2b
+2026-04-17 13:35:33  INFO       ENTRY AMZN  shares=42  stop=250.75  conviction=1.00  regime=TRENDING
+2026-04-17 13:36:36  INFO     Scanning 10 symbols | equity=$100,002.57 | regime=TRENDING | positions=3
+2026-04-17 13:37:39  INFO     Scanning 10 symbols | equity=$99,972.50 | regime=TRENDING | positions=3
+2026-04-17 13:37:40  INFO       SELL [SIGNAL]   220 INTC    order=94e000e5-2715-4544-94f5-2da383eb668f
+2026-04-17 13:37:40  INFO       PNL INTC  entry=67.97  exit=67.89  pnl=$-17.60
+2026-04-17 13:38:43  INFO     Scanning 10 symbols | equity=$99,979.46 | regime=TRENDING | positions=2
+2026-04-17 13:39:47  INFO     Scanning 10 symbols | equity=$99,996.18 | regime=TRENDING | positions=2
+2026-04-17 13:39:48  INFO       BUY    207 BAC     order=752251e4-1bd7-43bb-9d79-fb1768b4fe57
+2026-04-17 13:39:48  INFO       ENTRY BAC  shares=207  stop=53.93  conviction=1.00  regime=TRENDING
+2026-04-17 13:40:50  INFO     Scanning 10 symbols | equity=$99,989.06 | regime=TRENDING | positions=3
+2026-04-17 13:40:52  INFO       STOP-LOSS BAC  price=53.91  stop=53.93
+2026-04-17 13:40:52  INFO       SELL [STOP]   207 BAC     order=eeea5c51-fe73-4c14-acc7-558d17c62317
+2026-04-17 13:40:52  INFO       PNL BAC  entry=53.97  exit=53.91  pnl=$-10.35
+2026-04-17 13:41:54  INFO     Scanning 10 symbols | equity=$99,961.84 | regime=TRENDING | positions=2
+2026-04-17 13:42:57  INFO     Scanning 10 symbols | equity=$99,976.51 | regime=TRENDING | positions=2
+2026-04-17 13:43:00  INFO       BUY    211 SLB     order=999df7f2-c73f-47ec-8623-8ef78ceba9f4
+2026-04-17 13:43:00  INFO       ENTRY SLB  shares=211  stop=52.75  conviction=1.00  regime=TRENDING
+2026-04-17 13:44:01  INFO     Scanning 10 symbols | equity=$99,974.73 | regime=TRENDING | positions=3
+2026-04-17 13:45:04  INFO     Near market close — closing all positions.
+2026-04-17 13:45:04  INFO     All positions closed.
+2026-04-17 13:45:04  INFO     ====================================================
+2026-04-17 13:45:04  INFO       SESSION EVALUATION
+2026-04-17 13:45:04  INFO     ====================================================
+2026-04-17 13:45:04  INFO       Closed trades   : 1
+2026-04-17 13:45:04  INFO       Win rate        : 0.0%
+2026-04-17 13:45:04  INFO       Total P&L       : $-10.35
+2026-04-17 13:45:04  INFO       Avg P&L / trade : $-10.35
+2026-04-17 13:45:04  INFO       Avg winner      : $+0.00
+2026-04-17 13:45:04  INFO       Avg loser       : $-10.35
+2026-04-17 13:45:04  INFO       Profit factor   : 0.00
+2026-04-17 13:45:04  INFO       Best trade      : BAC  $-10.35
+2026-04-17 13:45:04  INFO       Worst trade     : BAC  $-10.35
+2026-04-17 13:45:04  INFO       WARNING: Profit factor < 1 — strategy losing money overall
+2026-04-17 13:45:04  INFO     ====================================================
+2026-04-17 14:45:05  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 14:50:05  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 14:55:06  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:00:06  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:05:07  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:10:07  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:15:08  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:20:08  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:25:08  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:30:09  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:35:09  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:40:10  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:45:10  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:50:11  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 15:55:11  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:00:11  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:05:12  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:10:12  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:15:13  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:20:13  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 16:55:36  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 16:56:07  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 16:56:37  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 16:57:07  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 16:57:37  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:02:38  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:07:39  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:12:39  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:17:40  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:22:40  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:27:41  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:32:42  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 17:37:42  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-17 20:56:23  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 22:43:57  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-17 23:44:57  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-18 00:46:00  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-18 01:44:05  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb4070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-18 02:01:08  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb7b20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-18 02:22:25  ERROR    Main loop error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109fb72e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2026-04-18 02:22:55  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:15:40  INFO     Shutting down ...
+2026-04-18 07:15:51  INFO     Broker — PAPER
+2026-04-18 07:15:51  INFO     Bot ready — equity=$99,965.59
+2026-04-18 07:15:51  INFO     ====================================================
+2026-04-18 07:15:51  INFO       TRADING BOT STARTING
+2026-04-18 07:15:51  INFO       Mode    : PAPER
+2026-04-18 07:15:51  INFO       Capital : $10,000.00
+2026-04-18 07:15:51  INFO       Risk    : 2% per trade
+2026-04-18 07:15:51  INFO     ====================================================
+2026-04-18 07:15:51  INFO     ====================================================
+2026-04-18 07:15:51  INFO       PRE-MARKET PREP
+2026-04-18 07:15:51  INFO     ====================================================
+2026-04-18 07:15:51  INFO     Fixed watchlist (20): ['AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'META', 'TSLA', 'AMD', 'AVGO', 'ORCL', 'JPM', 'BAC', 'GS', 'V', 'MA', 'UNH', 'JNJ', 'LLY', 'XOM', 'SPY']
+2026-04-18 07:15:51  INFO     Running momentum screen over 81 symbols for 15 rotating picks ...
+2026-04-18 07:15:51  INFO     Alpaca API initialised — mode: PAPER
+2026-04-18 07:16:04  INFO     Today's watchlist — 20 fixed + 15 rotating = 35 total
+2026-04-18 07:16:04  INFO       Fixed   : ['AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'META', 'TSLA', 'AMD', 'AVGO', 'ORCL', 'JPM', 'BAC', 'GS', 'V', 'MA', 'UNH', 'JNJ', 'LLY', 'XOM', 'SPY']
+2026-04-18 07:16:04  INFO       Rotating: ['INTC', 'C', 'SLB', 'F', 'CSCO', 'WMT', 'NFLX', 'WFC', 'UBER', 'CMCSA', 'MDLZ', 'KO', 'PLTR', 'BSX', 'NKE']
+2026-04-18 07:16:04  INFO       WMT     sector=ConsStap   mom=+7.1%  price=$127.50  vol=605,828
+2026-04-18 07:16:04  INFO       KO      sector=ConsStap   mom=+1.3%  price=$75.74  vol=863,161
+2026-04-18 07:16:04  INFO       CSCO    sector=Tech       mom=+11.1%  price=$86.26  vol=1,059,755
+2026-04-18 07:16:04  INFO       NFLX    sector=Comm       mom=+5.9%  price=$97.28  vol=2,207,277
+2026-04-18 07:16:04  INFO       CMCSA   sector=Comm       mom=+2.0%  price=$29.62  vol=1,564,249
+2026-04-18 07:16:04  INFO       NKE     sector=ConsDisc   mom=-12.1%  price=$46.05  vol=1,198,086
+2026-04-18 07:16:04  INFO       WFC     sector=Fin        mom=+4.7%  price=$81.39  vol=906,597
+2026-04-18 07:16:04  INFO       INTC    sector=Tech       mom=+55.9%  price=$68.50  vol=3,253,856
+2026-04-18 07:16:04  INFO       MDLZ    sector=ConsStap   mom=+1.8%  price=$57.24  vol=585,912
+2026-04-18 07:16:04  INFO       C       sector=Fin        mom=+20.7%  price=$132.20  vol=542,897
+2026-04-18 07:16:04  INFO       BSX     sector=Health     mom=-7.6%  price=$64.22  vol=853,418
+2026-04-18 07:16:04  INFO       SLB     sector=Energy     mom=+12.9%  price=$52.66  vol=1,093,565
+2026-04-18 07:16:04  INFO       F       sector=Auto       mom=+11.8%  price=$12.88  vol=2,118,897
+2026-04-18 07:16:04  INFO       UBER    sector=ConsDisc   mom=+4.4%  price=$77.13  vol=653,733
+2026-04-18 07:16:04  INFO       PLTR    sector=Tech       mom=-2.9%  price=$146.38  vol=855,783
+2026-04-18 07:16:04  INFO     Fetching sentiment for 35 symbols ...
+2026-04-18 07:16:07  INFO       AAPL    sentiment=+0.42  (POSITIVE)  articles=13
+2026-04-18 07:16:11  INFO       MSFT    sentiment=-0.18  (NEGATIVE)  articles=16
+2026-04-18 07:16:15  INFO       NVDA    sentiment=+0.00  (NEUTRAL)  articles=69
+2026-04-18 07:16:18  INFO       AMZN    sentiment=+0.27  (POSITIVE)  articles=15
+2026-04-18 07:16:22  INFO       GOOGL   sentiment=+0.02  (NEUTRAL)  articles=22
+2026-04-18 07:16:26  INFO       META    sentiment=+0.13  (POSITIVE)  articles=12
+2026-04-18 07:16:30  INFO       TSLA    sentiment=+0.15  (POSITIVE)  articles=24
+2026-04-18 07:16:33  INFO       AMD     sentiment=+0.40  (POSITIVE)  articles=7
+2026-04-18 07:16:39  INFO       AVGO    sentiment=+0.51  (POSITIVE)  articles=10
+2026-04-18 07:16:43  INFO       ORCL    sentiment=+0.14  (POSITIVE)  articles=10
+2026-04-18 07:16:47  INFO       JPM     sentiment=+0.00  (NEUTRAL)  articles=10
+2026-04-18 07:16:51  INFO       BAC     sentiment=+0.00  (NEUTRAL)  articles=9
+2026-04-18 07:16:54  INFO       GS      sentiment=+0.00  (NEUTRAL)  articles=5
+2026-04-18 07:16:54  INFO       V: no recent news — neutral (0.0)
+2026-04-18 07:16:55  INFO       MA: no recent news — neutral (0.0)
+2026-04-18 07:16:57  INFO       UNH     sentiment=+0.00  (NEUTRAL)  articles=4
+2026-04-18 07:17:02  INFO       JNJ     sentiment=+0.00  (NEUTRAL)  articles=3
+2026-04-18 07:17:08  INFO       LLY     sentiment=+0.39  (POSITIVE)  articles=3
+2026-04-18 07:17:12  INFO       XOM     sentiment=-0.17  (NEGATIVE)  articles=12
+2026-04-18 07:17:16  INFO       SPY     sentiment=+0.09  (NEUTRAL)  articles=15
+2026-04-18 07:17:21  INFO       INTC    sentiment=+0.00  (NEUTRAL)  articles=46
+2026-04-18 07:17:24  INFO       C       sentiment=+0.00  (NEUTRAL)  articles=5
+2026-04-18 07:17:25  INFO       SLB: no recent news — neutral (0.0)
+2026-04-18 07:17:29  INFO       F       sentiment=-0.16  (NEGATIVE)  articles=5
+2026-04-18 07:17:33  INFO       CSCO    sentiment=+0.31  (POSITIVE)  articles=4
+2026-04-18 07:17:35  INFO       WMT     sentiment=+0.23  (POSITIVE)  articles=3
+2026-04-18 07:17:39  INFO       NFLX    sentiment=-0.39  (NEGATIVE)  articles=13
+2026-04-18 07:17:42  INFO       WFC     sentiment=+0.38  (POSITIVE)  articles=5
+2026-04-18 07:17:44  INFO       UBER    sentiment=+0.45  (POSITIVE)  articles=3
+2026-04-18 07:17:46  INFO       CMCSA   sentiment=+0.00  (NEUTRAL)  articles=2
+2026-04-18 07:17:47  INFO       MDLZ: no recent news — neutral (0.0)
+2026-04-18 07:17:50  INFO       KO      sentiment=+0.00  (NEUTRAL)  articles=4
+2026-04-18 07:17:53  INFO       PLTR    sentiment=+0.22  (POSITIVE)  articles=7
+2026-04-18 07:17:56  INFO       BSX     sentiment=+0.00  (NEUTRAL)  articles=2
+2026-04-18 07:17:58  INFO       NKE     sentiment=+0.00  (NEUTRAL)  articles=1
+2026-04-18 07:17:58  INFO     Sentiment scoring complete.
+2026-04-18 07:17:59  WARNING  SPY indicators unavailable — defaulting to TRENDING regime
+2026-04-18 07:17:59  INFO     Ready — watchlist=['AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'META', 'TSLA', 'AMD', 'AVGO', 'ORCL', 'JPM', 'BAC', 'GS', 'V', 'MA', 'UNH', 'JNJ', 'LLY', 'XOM', 'SPY', 'INTC', 'C', 'SLB', 'F', 'CSCO', 'WMT', 'NFLX', 'WFC', 'UBER', 'CMCSA', 'MDLZ', 'KO', 'PLTR', 'BSX', 'NKE']  regime=TRENDING  equity=$99,965.59
+2026-04-18 07:17:59  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:22:59  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:28:28  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:49:02  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:54:02  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 07:59:02  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 08:04:03  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 08:09:03  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 08:14:04  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 08:19:04  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 08:39:03  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:03:37  ERROR    Main loop error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/homebrew/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 323, in run
+    if not self.broker.is_market_open():
+  File "/Users/geff/PycharmProjects/TRADING-BOT/src/bot.py", line 117, in is_market_open
+    return self.api.get_clock().is_open
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 997, in get_clock
+    resp = self.get('/clock')
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 254, in get
+    return self._request('GET', path, data)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 222, in _request
+    return self._one_request(method, url, opts, retry)
+  File "/opt/homebrew/lib/python3.10/site-packages/alpaca_trade_api/rest.py", line 241, in _one_request
+    resp = self._session.request(method, url, **opts)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-18 09:04:08  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:12:43  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:28:32  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:36:11  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:41:12  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:46:12  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:51:12  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 09:56:13  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:01:13  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:06:14  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:11:14  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:16:14  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:21:15  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:26:15  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:31:16  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:36:16  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:41:16  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:46:17  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:51:17  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 10:56:17  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:01:18  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:06:18  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:11:19  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:16:19  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:21:19  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:26:20  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:31:20  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:36:20  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:41:21  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:46:21  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:51:22  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 11:56:22  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:01:22  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:06:23  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:11:23  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:16:23  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:21:24  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:26:24  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:31:25  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:36:25  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:41:25  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:46:26  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:51:26  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 12:56:27  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:01:27  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:06:27  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:11:28  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:16:28  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:21:28  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:26:29  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:31:29  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:36:30  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:41:30  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:46:30  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:51:31  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 13:56:31  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:01:32  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:06:32  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:11:32  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:16:33  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:21:33  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:26:34  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:31:34  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:36:34  INFO     Market closed. Next open: 2026-04-20 09:30:00-04:00
+2026-04-18 14:40:52  INFO     Shutting down ...
+2026-04-18 14:40:52  INFO     All positions closed.
+2026-04-18 14:40:52  INFO     No trades to evaluate this session.
+2026-04-22 02:29:01  INFO     Database initialised — trades.db
+2026-04-22 02:29:01  INFO     Broker — PAPER
+2026-04-22 02:29:36  INFO     Database initialised — trades.db
+2026-04-22 02:29:37  INFO     Broker — PAPER

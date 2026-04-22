@@ -7,6 +7,9 @@ import os
 from dataclasses import dataclass
 from typing import List
 
+from dotenv import load_dotenv
+load_dotenv()
+
 
 @dataclass
 class Config:
@@ -32,7 +35,7 @@ class Config:
     DAILY_DRAWDOWN_LIMIT: float = 0.05   # 5%
 
     # ── Stock screener ─────────────────────────────────────────────────────────
-    WATCHLIST_SIZE:    int   = 10        # top N stocks selected each morning
+    WATCHLIST_SIZE:    int   = 15        # top N rotating stocks selected each morning
     MOMENTUM_LOOKBACK: int   = 20        # days for rate-of-change momentum score
     MIN_AVG_VOLUME:    int   = 500_000   # minimum avg daily volume filter
     MIN_PRICE:         float = 5.0       # ignore penny stocks
@@ -40,6 +43,15 @@ class Config:
 
     # Sector diversification cap — max stocks from any single sector
     MAX_PER_SECTOR:    int   = 3
+
+    # 20 fixed core holdings — always in the watchlist regardless of screener
+    FIXED_WATCHLIST: tuple = (
+        "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL",   # mega-cap tech
+        "META", "TSLA", "AMD", "AVGO", "ORCL",      # growth tech
+        "JPM", "BAC", "GS", "V", "MA",              # financials
+        "UNH", "JNJ", "LLY",                        # healthcare
+        "XOM", "SPY",                               # energy + index
+    )
 
     # ── Strategy indicators ────────────────────────────────────────────────────
     EMA_FAST:      int   = 9
@@ -54,7 +66,12 @@ class Config:
     REGIME_SIZE_MULTIPLIER: float = 0.25  # 25% of normal size in choppy market
 
     # ── Sentiment engine ───────────────────────────────────────────────────────
-    FINNHUB_API_KEY: str = os.getenv("FINNHUB_API_KEY", "YOUR_FINNHUB_KEY")
+    FINNHUB_API_KEY:   str = os.getenv("FINNHUB_API_KEY",   "YOUR_FINNHUB_KEY")
+    ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "YOUR_ANTHROPIC_KEY")
+
+    # ── Telegram ───────────────────────────────────────────────────────────────
+    TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
+    TELEGRAM_CHAT_ID:   str = os.getenv("TELEGRAM_CHAT_ID",   "")
 
     # Hours of news to look back when scoring sentiment
     SENTIMENT_LOOKBACK_HOURS: int = 24

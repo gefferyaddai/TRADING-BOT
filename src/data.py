@@ -120,6 +120,7 @@ def get_minute_bars(symbol: str, n_bars: int = CFG.BARS_TO_FETCH) -> pd.DataFram
             start=start.strftime("%Y-%m-%dT%H:%M:%SZ"),
             end=end.strftime("%Y-%m-%dT%H:%M:%SZ"),
             adjustment="raw",
+            feed="iex",
         ).df
         if bars.empty:
             return pd.DataFrame()
@@ -142,6 +143,7 @@ def get_daily_bars(symbol: str, n_days: int = 30) -> pd.DataFrame:
             start=start.strftime("%Y-%m-%dT%H:%M:%SZ"),
             end=end.strftime("%Y-%m-%dT%H:%M:%SZ"),
             adjustment="raw",
+            feed="iex",
         ).df
         if bars.empty:
             return pd.DataFrame()
@@ -189,18 +191,21 @@ def _atr_pct(high: pd.Series, low: pd.Series, close: pd.Series) -> float:
 
 def run_morning_screen(universe: List[str] = None) -> List[str]:
     """
-    Screen the universe each morning and return top N tickers by momentum.
-
-    Filters  : price, avg volume, ATR%
-    Ranks by : 20-day rate of change (descending)
-    New      : sector diversification cap — max CFG.MAX_PER_SECTOR per sector
+    Build today's watchlist:
+      - 20 fixed core stocks always included (CFG.FIXED_WATCHLIST)
+      - Up to 15 rotating stocks picked by momentum from the broader universe
+    Total watchlist: up to 35 symbols per day.
     """
+    fixed = list(CFG.FIXED_WATCHLIST)
+
     if universe is None:
-        universe = SP500_UNIVERSE
+        # Screen the SP500 universe excluding stocks already in the fixed list
+        universe = [s for s in SP500_UNIVERSE if s not in fixed]
 
-    log.info(f"Running morning screen over {len(universe)} symbols ...")
+    log.info(f"Fixed watchlist ({len(fixed)}): {fixed}")
+    log.info(f"Running momentum screen over {len(universe)} symbols for {CFG.WATCHLIST_SIZE} rotating picks ...")
+
     scores = []
-
     for symbol in universe:
         try:
             df = get_daily_bars(symbol, n_days=max(CFG.MOMENTUM_LOOKBACK + 5, 30))
@@ -227,39 +232,34 @@ def run_morning_screen(universe: List[str] = None) -> List[str]:
         except Exception as e:
             log.warning(f"Screen error for {symbol}: {e}")
 
-    if not scores:
-        log.warning("Screener returned no results — check credentials / market hours")
-        return []
-
-    # Rank by momentum descending
-    ranked = sorted(scores, key=lambda x: x["momentum"], reverse=True)
-
-    # Apply sector diversification cap
-    selected    = []
+    # Rank by momentum and apply sector cap for rotating picks
+    ranked        = sorted(scores, key=lambda x: x["momentum"], reverse=True)
+    rotating      = []
     sector_counts: dict = {}
 
     for r in ranked:
-        if len(selected) >= CFG.WATCHLIST_SIZE:
+        if len(rotating) >= CFG.WATCHLIST_SIZE:
             break
         sector = r["sector"]
         count  = sector_counts.get(sector, 0)
         if count >= CFG.MAX_PER_SECTOR:
-            log.debug(
-                f"  {r['symbol']} skipped — sector {sector} "
-                f"already has {count} stocks"
-            )
             continue
-        selected.append(r)
+        rotating.append(r["symbol"])
         sector_counts[sector] = count + 1
 
-    top = [r["symbol"] for r in selected]
+    if not rotating:
+        log.warning("Rotating screener returned no results — using fixed list only")
 
-    log.info(f"Today's watchlist ({len(top)}): {top}")
-    for r in selected:
-        log.info(
-            f"  {r['symbol']:<6}  sector={r['sector']:<10} "
-            f"mom={r['momentum']:+.1f}%  "
-            f"price=${r['price']:.2f}  vol={r['avg_vol']:,.0f}"
-        )
+    combined = fixed + rotating
+    log.info(f"Today's watchlist — {len(fixed)} fixed + {len(rotating)} rotating = {len(combined)} total")
+    log.info(f"  Fixed   : {fixed}")
+    log.info(f"  Rotating: {rotating}")
+    for r in scores:
+        if r["symbol"] in rotating:
+            log.info(
+                f"  {r['symbol']:<6}  sector={r['sector']:<10} "
+                f"mom={r['momentum']:+.1f}%  "
+                f"price=${r['price']:.2f}  vol={r['avg_vol']:,.0f}"
+            )
 
-    return top
+    return combined
