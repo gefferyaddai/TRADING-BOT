@@ -120,7 +120,14 @@ class TelegramNotifier:
         self.send(
             f"🔔 *MARKET OPEN*\n"
             f"Regime  : {regime}\n"
-            f"Watching: `{preview}`{more}"
+            f"Watching: `{preview}`{more}\n\n"
+            f"*Commands*\n"
+            f"/status — today P&L + open positions\n"
+            f"/positions — open positions\n"
+            f"/performance — all-time stats\n"
+            f"/sell SYMBOL — close one position\n"
+            f"/sell all — close all positions\n"
+            f"/help — show this list"
         )
 
     def notify_session_end(self, report: dict, end_equity: float):

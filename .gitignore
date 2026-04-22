@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Bot runtime files
+src/trades.db
+src/bot_state.json
+src/trading_bot.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
