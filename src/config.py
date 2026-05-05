@@ -74,19 +74,19 @@ class Config:
     TELEGRAM_CHAT_ID:   str = os.getenv("TELEGRAM_CHAT_ID",   "")
 
     # Hours of news to look back when scoring sentiment
-    SENTIMENT_LOOKBACK_HOURS: int = 24
+    SENTIMENT_LOOKBACK_HOURS: int = 8
 
     # Minimum number of headlines that must agree on direction
     SENTIMENT_CONSENSUS_MIN: int = 2
 
     # Gate: sentiment score below this blocks any new buy entry
-    SENTIMENT_GATE_THRESHOLD: float = -0.3
+    SENTIMENT_GATE_THRESHOLD: float = -0.15
 
     # Sizing bands: score → conviction multiplier applied to position size
     # Format: (min_score, max_score, multiplier)
     # Scores below gate threshold are blocked entirely (no entry)
     SENTIMENT_SIZE_BANDS: tuple = (
-        (-0.3,  0.3,  1.0),   # neutral  → normal size
+        (-0.15, 0.3,  1.0),   # neutral  → normal size
         ( 0.3,  0.6,  1.0),   # mild positive → normal size
         ( 0.6,  0.8,  1.5),   # strong positive → 1.5× size
         ( 0.8,  1.01, 2.0),   # very strong → 2× size (still capped at MAX_POSITION_PCT)

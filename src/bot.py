@@ -139,6 +139,7 @@ class BotState:
         self.regime:             Regime            = Regime.TRENDING
         self.stop_losses:        Dict[str, float]  = {}
         self.entry_prices:       Dict[str, float]  = {}
+        self.stop_cooldowns:     Dict[str, float]  = {}  # symbol → timestamp of last stop-loss
         self.trades:             List[dict]        = []
         self.halted:             bool              = False
         self.screener_run_today: bool              = False
@@ -184,6 +185,13 @@ class TradingBot:
                 log.info(f"Restored stop-losses for: {list(self.state.stop_losses.keys())}")
         except Exception as e:
             log.warning(f"Could not restore bot state: {e}")
+
+    def _is_regular_hours(self) -> bool:
+        n = datetime.now(_ET)
+        after_open  = (n.hour > 9) or (n.hour == 9 and n.minute >= 30)
+        before_close = (n.hour < CFG.MARKET_CLOSE_HOUR or
+                        (n.hour == CFG.MARKET_CLOSE_HOUR and n.minute < CFG.MARKET_CLOSE_MIN))
+        return after_open and before_close
 
     def _is_near_close(self) -> bool:
         n = datetime.now(_ET)
@@ -325,9 +333,16 @@ class TradingBot:
                 if self.broker.sell(symbol, qty, reason="STOP"):
                     self._record_exit(symbol, qty, current_price, "STOP")
                     self._clear_state(symbol)
+                    self.state.stop_cooldowns[symbol] = time.time()
+                    log.info(f"  COOLDOWN {symbol} — blocked for 60 min after stop")
                 return
 
         # Entry — use snapshot of positions + this-scan purchases to avoid race
+        cooldown_until = self.state.stop_cooldowns.get(symbol, 0)
+        if time.time() < cooldown_until + 3600:
+            log.debug(f"  {symbol} skipped — in stop cooldown")
+            return
+
         if signal == Signal.BUY and qty == 0 and symbol not in bought_this_scan:
             if len(open_positions) + len(bought_this_scan) >= CFG.MAX_OPEN_POSITIONS:
                 return
@@ -404,10 +419,10 @@ class TradingBot:
                 if self._should_run_screener():
                     self.run_morning_prep()
 
-                if not self.broker.is_market_open():
+                if not self.broker.is_market_open() or not self._is_regular_hours():
                     clock = self.broker.get_clock()
-                    log.info(f"Market closed. Next open: {clock['next_open']}")
-                    time.sleep(300)
+                    log.info(f"Outside regular hours (9:30–3:45 ET). Next open: {clock['next_open']}")
+                    time.sleep(60)
                     continue
 
                 if self._is_near_close():

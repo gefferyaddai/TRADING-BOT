@@ -151,7 +151,7 @@ def get_signal(df: pd.DataFrame, sentiment_score: float = 0.0,
 
     last = df.iloc[-1]
     required = ["ema_diff", "prev_ema_diff", "adx", "atr"]
-    if any(pd.isna(last[c]) for c in required):
+    if any(c not in df.columns or pd.isna(last[c]) for c in required):
         return Signal.HOLD
 
     crossed_up   = last["prev_ema_diff"] <= 0 and last["ema_diff"] > 0
@@ -229,7 +229,7 @@ def get_conviction_multiplier(sentiment_score: float, regime: Regime) -> float:
 def indicator_snapshot(df: pd.DataFrame) -> tuple[dict, pd.DataFrame]:
     """Return (snapshot_dict, enriched_df) so callers can reuse the enriched df."""
     enriched = add_indicators(df)
-    if enriched.empty:
+    if enriched.empty or "ema_fast" not in enriched.columns:
         return {}, enriched
     last = enriched.iloc[-1]
     snap = {
